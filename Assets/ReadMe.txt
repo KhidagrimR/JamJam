@@ -21,4 +21,20 @@ Damien
 
 ______
 
+2ème passage : Yorick
+
+Je me suis concentré sur la partie esthétique vu que la base du gameplay ne m'avait pas spécialement inspiré et que je suis un très mauvais dev.
+
+En dev, j'ai juste rajouté un weight pour le spawn des entités (je ne suis même pas sûr que ça fonctionne comme il faut...)
+
+Sinon j'ai fait le sprite du joueur, des 3 types de pengu et de l'orque. Je suis parti sur un thème penguin cyborg assez cute. 
+J'ai fait quelques éléments d'UI comme le coeur, et des rochers pour du décor mais ils n'ont aucune utilisation en terme de gameplay actuellement donc fais-en ce que tu veux.
+Tu peux modifier leur disposition dans l'interface aussi, le canva actuel est juste là pour tester le look du jeu (de même pour la scène main menu).
+J'ai importé 2 typos, tu peux les utiliser ou non selon tes désirs.
+
+J'espère que ces pengu, la soucoupe pengu et l'orque cyborg te donneront des idées pour faire un gameplay sympa.
+
+Bon courage !
+
+______
 

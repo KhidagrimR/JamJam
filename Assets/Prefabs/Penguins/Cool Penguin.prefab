@@ -1,19 +1,27 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &120223154080264007
+--- !u!1001 &3704631066108739684
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8852369128531276511, guid: f83af8020da5c354391ed895dd682a8e, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8852369128531276511, guid: f83af8020da5c354391ed895dd682a8e, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2261965785143704301, guid: f83af8020da5c354391ed895dd682a8e, type: 3}
       propertyPath: speed
-      value: 7
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2261965785143704301, guid: f83af8020da5c354391ed895dd682a8e, type: 3}
       propertyPath: entityName
-      value: Little Blue Penguin
+      value: Cool Penguin
       objectReference: {fileID: 0}
     - target: {fileID: 2261965785143704301, guid: f83af8020da5c354391ed895dd682a8e, type: 3}
       propertyPath: isFighting
@@ -21,15 +29,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2261965785143704301, guid: f83af8020da5c354391ed895dd682a8e, type: 3}
       propertyPath: healthPoint
-      value: 10
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 2261965785143704301, guid: f83af8020da5c354391ed895dd682a8e, type: 3}
       propertyPath: penguinName
-      value: Little Blue Penguin
+      value: Gentoo Penguin
       objectReference: {fileID: 0}
     - target: {fileID: 2261965785143704301, guid: f83af8020da5c354391ed895dd682a8e, type: 3}
       propertyPath: damagePerHit
-      value: 30
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 2261965785143704301, guid: f83af8020da5c354391ed895dd682a8e, type: 3}
       propertyPath: targerLayer.m_Bits
@@ -37,23 +45,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2419862496788773331, guid: f83af8020da5c354391ed895dd682a8e, type: 3}
       propertyPath: m_Name
-      value: Little Blue Penguin
+      value: Cool Penguin
       objectReference: {fileID: 0}
     - target: {fileID: 2419862496788773332, guid: f83af8020da5c354391ed895dd682a8e, type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2419862496788773332, guid: f83af8020da5c354391ed895dd682a8e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0b5a12dbfa1d3cf4da31cfbcb2266285, type: 3}
+    - target: {fileID: 2419862496788773332, guid: f83af8020da5c354391ed895dd682a8e, type: 3}
       propertyPath: m_Color.b
-      value: 0.6037736
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2419862496788773332, guid: f83af8020da5c354391ed895dd682a8e, type: 3}
       propertyPath: m_Color.g
-      value: 0.2615955
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2419862496788773332, guid: f83af8020da5c354391ed895dd682a8e, type: 3}
       propertyPath: m_Color.r
-      value: 0.08259169
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2419862496788773333, guid: f83af8020da5c354391ed895dd682a8e, type: 3}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2419862496788773333, guid: f83af8020da5c354391ed895dd682a8e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2419862496788773333, guid: f83af8020da5c354391ed895dd682a8e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 2419862496788773333, guid: f83af8020da5c354391ed895dd682a8e, type: 3}
       propertyPath: m_LocalPosition.x

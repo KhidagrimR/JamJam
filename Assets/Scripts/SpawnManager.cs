@@ -15,6 +15,8 @@ public class SpawnManager : MonoBehaviour
     [Tooltip("L'intervalle de temps en seconde entre chaque spawn")]
     public float spawnInterval = 5f;
     private float timeSinceLastSpawn = 0f;
+    [Tooltip("Les poids de spawn pour chaque entité")]
+    public float[] entitySpawnWeights;
 
     void Update()
     {
@@ -29,6 +31,27 @@ public class SpawnManager : MonoBehaviour
 
     void SpawnEntity()
     {
+        // Calcule le total des poids de spawn des entités
+        float totalSpawnWeight = 0f;
+        for (int i = 0; i < entitiesToSpawn.Length; i++)
+        {
+            totalSpawnWeight += entitySpawnWeights[i];
+        }
+
+        // Générer un nombre aléatoire entre 0 et le poids total
+        float randomWeight = Random.Range(0f, totalSpawnWeight);
+
+        // Boucle sur les entités et soustrait le poids de leur spawn du nombre aléatoire
+        // jusqu'à ce que le nombre aléatoire devienne négatif ou nul. L'entité qui rend le nombre aléatoire
+        // aléatoire à zéro ou positif est l'entité qui est spawnée.
+        int indexToSpawn = 0;
+        while (randomWeight >= 0f)
+        {
+            randomWeight -= entitySpawnWeights[indexToSpawn];
+            indexToSpawn++;
+        }
+        indexToSpawn--;
+
         // On choisit un objet aléatoire à faire apparaître
         GameObject objectToSpawn = entitiesToSpawn[Random.Range(0, entitiesToSpawn.Length)];
         // On calcule une position aléatoire dans le rayon autour du joueur

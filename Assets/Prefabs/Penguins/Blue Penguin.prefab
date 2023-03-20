@@ -1,19 +1,38 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &3704631066108739684
+--- !u!1001 &120223154080264007
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8852369128531276511, guid: f83af8020da5c354391ed895dd682a8e, type: 3}
+<<<<<<< HEAD:Assets/Prefabs/Penguins/Blue Penguin.prefab
+=======
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8852369128531276511, guid: f83af8020da5c354391ed895dd682a8e, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8852369128531276511, guid: f83af8020da5c354391ed895dd682a8e, type: 3}
+>>>>>>> 687eea4... Blue Pingu and King Pingu:Assets/Prefabs/Penguins/Emperor Penguin.prefab
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8852369128531276511, guid: f83af8020da5c354391ed895dd682a8e, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2261965785143704301, guid: f83af8020da5c354391ed895dd682a8e, type: 3}
       propertyPath: speed
-      value: 5
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2261965785143704301, guid: f83af8020da5c354391ed895dd682a8e, type: 3}
       propertyPath: entityName
-      value: Gentoo Penguin
+      value: Blue Penguin
       objectReference: {fileID: 0}
     - target: {fileID: 2261965785143704301, guid: f83af8020da5c354391ed895dd682a8e, type: 3}
       propertyPath: isFighting
@@ -21,15 +40,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2261965785143704301, guid: f83af8020da5c354391ed895dd682a8e, type: 3}
       propertyPath: healthPoint
-      value: 20
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2261965785143704301, guid: f83af8020da5c354391ed895dd682a8e, type: 3}
       propertyPath: penguinName
-      value: Gentoo Penguin
+      value: Little Blue Penguin
       objectReference: {fileID: 0}
     - target: {fileID: 2261965785143704301, guid: f83af8020da5c354391ed895dd682a8e, type: 3}
       propertyPath: damagePerHit
-      value: 25
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2261965785143704301, guid: f83af8020da5c354391ed895dd682a8e, type: 3}
       propertyPath: targerLayer.m_Bits
@@ -37,19 +56,48 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2419862496788773331, guid: f83af8020da5c354391ed895dd682a8e, type: 3}
       propertyPath: m_Name
-      value: Gentoo Penguin
+      value: Blue Penguin
       objectReference: {fileID: 0}
     - target: {fileID: 2419862496788773332, guid: f83af8020da5c354391ed895dd682a8e, type: 3}
+<<<<<<< HEAD:Assets/Prefabs/Penguins/Blue Penguin.prefab
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6a8c1f2a7cdaff2489aec45a58355a24, type: 3}
+=======
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2419862496788773332, guid: f83af8020da5c354391ed895dd682a8e, type: 3}
+      propertyPath: m_Size.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2419862496788773332, guid: f83af8020da5c354391ed895dd682a8e, type: 3}
+      propertyPath: m_Size.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2419862496788773332, guid: f83af8020da5c354391ed895dd682a8e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4202b9ea3cc230d4f91042cf3f9f7989, type: 3}
+>>>>>>> 687eea4... Blue Pingu and King Pingu:Assets/Prefabs/Penguins/Emperor Penguin.prefab
+    - target: {fileID: 2419862496788773332, guid: f83af8020da5c354391ed895dd682a8e, type: 3}
       propertyPath: m_Color.b
-      value: 0.8018868
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2419862496788773332, guid: f83af8020da5c354391ed895dd682a8e, type: 3}
       propertyPath: m_Color.g
-      value: 0.556663
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2419862496788773332, guid: f83af8020da5c354391ed895dd682a8e, type: 3}
       propertyPath: m_Color.r
-      value: 0
+      value: 1
+<<<<<<< HEAD:Assets/Prefabs/Penguins/Blue Penguin.prefab
+=======
+      objectReference: {fileID: 0}
+    - target: {fileID: 2419862496788773332, guid: f83af8020da5c354391ed895dd682a8e, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+>>>>>>> 687eea4... Blue Pingu and King Pingu:Assets/Prefabs/Penguins/Emperor Penguin.prefab
       objectReference: {fileID: 0}
     - target: {fileID: 2419862496788773333, guid: f83af8020da5c354391ed895dd682a8e, type: 3}
       propertyPath: m_RootOrder
@@ -57,11 +105,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2419862496788773333, guid: f83af8020da5c354391ed895dd682a8e, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.6
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 2419862496788773333, guid: f83af8020da5c354391ed895dd682a8e, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.6
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 2419862496788773333, guid: f83af8020da5c354391ed895dd682a8e, type: 3}
       propertyPath: m_LocalPosition.x

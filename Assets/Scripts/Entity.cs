@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 // Ce script sert pour les ennemis et les alliés (les pingouins)
-// Pour override les fonctions celon l'entité il faut utiliser les scripts Penguin.cs et Enemy.cs 
+// Pour override les fonctions selon l'entité il faut utiliser les scripts Penguin.cs et Enemy.cs 
 public abstract class Entity : MonoBehaviour
 {
     [HideInInspector] public bool isFighting = false;
