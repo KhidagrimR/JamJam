@@ -8,6 +8,22 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -8852369128531276511, guid: f83af8020da5c354391ed895dd682a8e, type: 3}
+      propertyPath: m_Size.x
+      value: 0.67385083
+      objectReference: {fileID: 0}
+    - target: {fileID: -8852369128531276511, guid: f83af8020da5c354391ed895dd682a8e, type: 3}
+      propertyPath: m_Size.y
+      value: 0.762298
+      objectReference: {fileID: 0}
+    - target: {fileID: -8852369128531276511, guid: f83af8020da5c354391ed895dd682a8e, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.00829193
+      objectReference: {fileID: 0}
+    - target: {fileID: -8852369128531276511, guid: f83af8020da5c354391ed895dd682a8e, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.2625777
+      objectReference: {fileID: 0}
+    - target: {fileID: -8852369128531276511, guid: f83af8020da5c354391ed895dd682a8e, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 1.5
       objectReference: {fileID: 0}
@@ -15,6 +31,10 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.5
       objectReference: {fileID: 0}
+    - target: {fileID: 1190756199153044733, guid: f83af8020da5c354391ed895dd682a8e, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 83834b6f4240126438be5101419bd3b6, type: 2}
     - target: {fileID: 2261965785143704301, guid: f83af8020da5c354391ed895dd682a8e, type: 3}
       propertyPath: speed
       value: 5
@@ -38,6 +58,10 @@ PrefabInstance:
     - target: {fileID: 2261965785143704301, guid: f83af8020da5c354391ed895dd682a8e, type: 3}
       propertyPath: damagePerHit
       value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2261965785143704301, guid: f83af8020da5c354391ed895dd682a8e, type: 3}
+      propertyPath: throwDuration
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2261965785143704301, guid: f83af8020da5c354391ed895dd682a8e, type: 3}
       propertyPath: targerLayer.m_Bits
@@ -118,6 +142,14 @@ PrefabInstance:
     - target: {fileID: 2419862496788773333, guid: f83af8020da5c354391ed895dd682a8e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8401189780042316263, guid: f83af8020da5c354391ed895dd682a8e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0b5a12dbfa1d3cf4da31cfbcb2266285, type: 3}
+    - target: {fileID: 8401189780042316263, guid: f83af8020da5c354391ed895dd682a8e, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f83af8020da5c354391ed895dd682a8e, type: 3}

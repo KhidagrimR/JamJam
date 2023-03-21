@@ -12,7 +12,7 @@ public class PenguinManager : MonoBehaviour
     [Tooltip("Rayon de collision entre les pingouins")]
     public float collisionRadius = 0.5f;
 
-    private GameObject player;
+    [HideInInspector] public GameObject player;
     private Penguin penguin;
     [HideInInspector] public List<GameObject> followPenguins = new List<GameObject>();
 
@@ -33,7 +33,7 @@ public class PenguinManager : MonoBehaviour
         foreach (GameObject penguin in GameObject.FindGameObjectsWithTag("Penguin"))
         {
             Penguin penguinScript = penguin.GetComponent<Penguin>();
-            if (!penguinScript.isFighting)
+            if (!penguinScript.isFighting && !penguinScript.isBeingThrowed)
             {
                 float distance = Vector2.Distance(penguin.transform.position, player.transform.position);
 
@@ -55,6 +55,9 @@ public class PenguinManager : MonoBehaviour
             Penguin penguinScript = penguin.GetComponent<Penguin>();
             Vector2 direction = (player.transform.position - penguin.transform.position).normalized;
 
+            if(penguinScript.isBeingThrowed) 
+                continue;
+
             // On détecte les collisions entre pingouins
             Collider2D[] colliders = Physics2D.OverlapCircleAll(penguin.transform.position, collisionRadius);
             foreach (Collider2D col in colliders)
@@ -68,6 +71,21 @@ public class PenguinManager : MonoBehaviour
             }
 
             penguin.transform.position += (Vector3)(direction * penguinScript.speed * Time.deltaTime);
+        }
+    }
+
+    public Penguin GetAFollowingPenguin()
+    {
+        if(followPenguins.Count > 0)
+        {
+            Penguin p = followPenguins[0].GetComponent<Penguin>();
+            followPenguins.Remove(followPenguins[0]);
+            return p;
+
+        }
+        else
+        {
+            return null;
         }
     }
 

@@ -38,3 +38,10 @@ Bon courage !
 
 ______
 
+3éme Passage : Patrick Patochard
+
+J'ai voulu accés le jeu sur le combat comme il a été commencé genre pikmin
+J'ai changé le system de spawn de pinguin allié, ceux-ci sortent des oeufs
+Espace permet au joueur de donner des coups de pieds => faire éclore des oeufs OU envoyer ses pingouin a l'attaque(cf pikmin)
+Y a pas mal de choses que j'ai pas trop exploité, pour le moment il faut essayer de défendre le roi et le joueur mais c est pas équilibré ! 
+Bon courage pour les suivant.e.s !! 
