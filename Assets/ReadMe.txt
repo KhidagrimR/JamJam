@@ -45,3 +45,11 @@ J'ai changé le system de spawn de pinguin allié, ceux-ci sortent des oeufs
 Espace permet au joueur de donner des coups de pieds => faire éclore des oeufs OU envoyer ses pingouin a l'attaque(cf pikmin)
 Y a pas mal de choses que j'ai pas trop exploité, pour le moment il faut essayer de défendre le roi et le joueur mais c est pas équilibré ! 
 Bon courage pour les suivant.e.s !! 
+
+______
+
+4e Passage : Lol’eau
+
+J’ai commencé par noter ce qui pour moi n’allait pas au niveau gameplay avant de me rendre compte que j’arriverai pas à y changer quoi que ce soit. Ensuite j’ai imaginé un look hybride avec un décor en 3D et des persos en 2D avant de voir que ça ne pouvait pas marcher (pour ensuite me rendre compte que si une heure avant la fin). J’ai utilisé le spawner des orques pour faire pop des sprites animés de vaguelettes un peu partout et de différentes tailles qui meurent au bout de 2s (ça m’a pris une heure parce que je faisais de la merde). J’ai chié une texture d’eau en fond faite avec des blopens qui bouge doucement et se contracte. J’ai ajouté du post process et une light globale bleutée pour harmoniser l’image. J’ai dessiné un pauv’ morceau de banquise que j’ai dupliqué ad nauséam jusqu’à ce que ça ait étrangement l’air de plus se voir. J’ai ajouté avec le base particle system des bouboules qui tombent d’en haut pour faire la neige, et des bouboules invisibles qui viennent de la gauche laissant une traînée pour faire un effet de vent. J’ai ajouté quelques ombres et réorganisé les couches des sprites pour la lisibilité, et j’ai fix l’animation du vaisseau. 
+Je crois que c’est tout, donc basiquement que du visuel.
+Bisous

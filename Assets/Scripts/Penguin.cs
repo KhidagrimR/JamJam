@@ -9,10 +9,15 @@ public class Penguin : Entity
     [HideInInspector]public bool isBeingThrowed;
     Vector3 positionToBeThrew;
     Animator animator;
+    [SerializeField] ParticleSystem feather;
 
     [Tooltip("Duration to go to the position where it is supposed to be threw")]
     public float throwDuration = 1.0f;
 
+    [Header("Sons")]
+    public AudioSource audioSource;
+    public AudioClip attack;
+    public AudioClip death;
     protected override void Start()
     {
         base.Start();
@@ -32,6 +37,7 @@ public class Penguin : Entity
 
     protected override void AttackEnemy()
     {
+        PlaySound(attack);
         base.AttackEnemy();
     }
 
@@ -43,6 +49,14 @@ public class Penguin : Entity
     protected override void Death()
     {
         penguinManager.followPenguins.Remove(gameObject);
+        animator.SetTrigger("Dead");
+        feather.Play();
+        PlaySound(death);
+    }
+
+    //Function call directly in the death animation
+    public void DefinitiveDeath()
+    {
         base.Death();
     }
 
@@ -69,5 +83,11 @@ public class Penguin : Entity
         //v = d/t
         float speed = (penguinManager.player.transform.position - positionToBeThrew).magnitude / throwDuration;
         transform.position += (Vector3)(positionToBeThrew * speed * Time.deltaTime);
+    }
+
+    public void PlaySound(AudioClip clip)
+    {
+        audioSource.clip = clip;
+        audioSource.Play();
     }
 }

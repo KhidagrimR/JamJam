@@ -8,6 +8,10 @@ public class Enemy : Entity
     bool hasTarget = false;
     Transform targetToHunt;
 
+    [Tooltip("Rayon du cercle d'attque")] 
+    [SerializeField] float attackRadius;
+    [SerializeField] ParticleSystem attack;
+
     protected override void Start()
     {
         base.Start();
@@ -33,7 +37,28 @@ public class Enemy : Entity
 
     protected override void AttackEnemy()
     {
-        base.AttackEnemy();
+        if (nearestEnemy == null)
+        {
+            isFighting = false;
+        }
+        else
+        {
+            //Create a circle around him and attack all penguins in the circle
+            LayerMask penguinMask = LayerMask.GetMask("Penguin");
+            Collider2D[] penguins = Physics2D.OverlapCircleAll(transform.position, attackRadius, penguinMask);
+            attack.Play();
+            foreach (Collider2D pengu in penguins)
+            {
+                pengu.gameObject.GetComponent<Entity>().TakeDamage(damagePerHit);
+            }
+        }
+
+        
+    }
+    void OnDrawGizmos()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, attackRadius);
     }
 
     protected override void TargetEnemy()
