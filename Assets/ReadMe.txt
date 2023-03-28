@@ -60,3 +60,19 @@ _____
 
 J'ai ajouté des vfx et des petites anims d'attaque et de mort pour les pingouins et l'orque. L'orque attaque désormais en zone, dans un cercle autour de lui. J'ai aussi ajouté 1 ou 2 sons.
 Voilà donc surtout du feedback, un peu d'équilibrage et une petite mécanique d'attaque différente.
+Bisous
+
+_____
+
+6e passage : Mastinas (bonjour je cherche Sirine)
+
+J'ai commencé par terminer le menu de départ (titre, corriger le bouton qui ne marchait pas et afficher les commandes utiles) et corrigé en conséquence les build settings.
+Ensuite j'ai fait un système de messages à afficher : voir dans GameManager, fonction "PrintCustomText(...)" ; commentaire au-dessus.
+J'ai perdu beaucoup de temps dessus, donc hélas rien de plus.
+Ah, si, un semblant de base d'histoire si vous voulez vous faire plaisir en partant sur ça haha. Enjoy!
+
+Tschüss!
+
+_____
+
+7e passage : 
